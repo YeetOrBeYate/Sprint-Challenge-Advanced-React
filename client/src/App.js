@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {GetData} from "./hooks/GetData";
+import Card from "./Components/Card";
 
 function App() {
 
@@ -17,7 +18,9 @@ function App() {
   return (
     <div className="App">
         Yeet
-        <h1>{values.length}</h1>
+        {values.map((player,index)=>(
+          <Card player={player} key={index}/>
+        ))}
         
     </div>
   );

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {GetData} from "./hooks/GetData";
 import Card from "./Components/Card";
+import Title from "./Components/Title";
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Top searches for Womens Soccer</h1>
+      <Title/>
         <div className="flex">
           {values.map((player,index)=>(
             <Card player={player} key={index}/>

@@ -17,14 +17,10 @@ class Card extends React.Component{
 
     }
 
-    componentDidUpdate =()=>{
-
-    }
-
     render(){
         return(
-            <div key={this.state.key}>
-                <h1>Name:{this.state.data.name}</h1>
+            <div className="card" key={this.state.key}>
+                <h2>Name:{this.state.data.name}</h2>
                 <p>Country:{this.state.data.country}</p>
                 <p>Searches:{this.state.data.searches}</p>
             </div>

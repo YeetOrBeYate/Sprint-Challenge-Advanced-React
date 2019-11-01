@@ -17,10 +17,12 @@ function App() {
 
   return (
     <div className="App">
-        Yeet
-        {values.map((player,index)=>(
-          <Card player={player} key={index}/>
-        ))}
+      <h1>Top searches for Womens Soccer</h1>
+        <div className="flex">
+          {values.map((player,index)=>(
+            <Card player={player} key={index}/>
+          ))}
+        </div>
         
     </div>
   );
